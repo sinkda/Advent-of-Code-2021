@@ -1,11 +1,9 @@
 # Day 1
 
 ## Puzzle 1
-
 As the submarine drops below the surface of the ocean, it automatically performs a sonar sweep of the nearby sea floor. On a small screen, the sonar sweep report (your puzzle input) appears: each line is a measurement of the sea floor depth as the sweep looks further and further away from the submarine.
 
 For example, suppose you had the following report:
-
 
 | Sample Values | 
 | ------------- |
@@ -19,7 +17,6 @@ For example, suppose you had the following report:
 | 260           |
 | 263           |
 | 199           |
-
 
 This report indicates that, scanning outward from the submarine, the sonar sweep found depths of 199, 200, 208, 210, and so on.
 
@@ -48,11 +45,6 @@ In this example, there are 7 measurements that are larger than the previous meas
 
 ## Answer to Puzzle 1
 1681
-
-## Provided Puzzle Input 
-### Provided by website
-
-Located in "input.txt"
 
 ## Puzzle 2
 
@@ -95,5 +87,10 @@ In this example, there are 5 sums that are larger than the previous sum.
 
 *Consider sums of a three-measurement sliding window. How many sums are larger than the previous sum?*
 
-## Answer to Puzzle 3
+## Answer to Puzzle 2
 1704
+
+## Provided Puzzle Input 
+### Provided by website
+
+Located in "input.txt"
