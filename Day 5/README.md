@@ -77,7 +77,7 @@ Consider all of the lines. At how many points do at least two lines overlap?
 
 
 ## Answer to Puzzle 2
-
+21140
 
 ## Provided Puzzle Input 
 ### Provided by website

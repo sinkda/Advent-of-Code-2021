@@ -47,7 +47,7 @@ foreach($coordinates as $line)
     }
 
     // Vertical Line (Ys match)
-    if($line[1] == $line[3])
+    else if($line[1] == $line[3])
     {
         $xPosStart = ($line[0] > $line[2]) ? $line[2] : $line[0];
         $xPosEnd = ($line[0] > $line[2]) ? $line[0] : $line[2];
@@ -60,6 +60,25 @@ foreach($coordinates as $line)
     }
 
     // Diagonal Line
+    else {
+
+        $xPosStart = ($line[0] > $line[2]) ? $line[2] : $line[0];
+        $yPosStart =  ($line[0] > $line[2]) ? $line[3] : $line[1];
+        $xPosEnd = ($line[0] > $line[2]) ? $line[0] : $line[2];
+        $yPosEnd = ($line[0] > $line[2]) ?$line[1] : $line[3];
+
+        for($x = $xPosStart; $x <= $xPosEnd; $x++)
+        {
+            if($yPosEnd > $yPosStart)
+                $y = $yPosStart + ($x - $xPosStart);
+            else
+                $y = $yPosStart - ($x - $xPosStart);
+        
+            $grid[$x][$y]++;
+        }
+
+
+    }
 }
 
 // find the number of grid elements where the value is 2 or more
@@ -74,4 +93,3 @@ for($i = 0; $i <= 1000; $i++)
 }
 
 echo "The Sum of overlapping lines is {$sum}\n";
-
